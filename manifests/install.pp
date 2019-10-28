@@ -31,7 +31,7 @@ class homeassistant::install (
 
   class{'::python':
     ensure     => present,
-    version    => 'python3',
+    version    => '3',
     pip        => 'present',
     virtualenv => 'present',
     dev        => 'present',
