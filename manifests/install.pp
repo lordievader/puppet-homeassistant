@@ -34,7 +34,7 @@ class homeassistant::install (
     version    => 'python3',
     pip        => 'present',
     virtualenv => 'present',
-    dev        => true,
+    dev        => 'present',
   }
 
   python::pyvenv{$home:
